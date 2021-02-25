@@ -1,15 +1,8 @@
-import Vue from 'vue'
-import VueCompositionApi from '@vue/composition-api'
-import '../src/style/index.css'
-import { addParameters } from '@storybook/vue'
-
-Vue.use(VueCompositionApi)
+import { addParameters } from '@storybook/vue3'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
-
 }
-
 
 addParameters({
   options: {
