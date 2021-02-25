@@ -1,18 +1,33 @@
-copy from https://www.github.com/coloration/sika-vue
+# component-library-boilerplate
 
-# Coloration Sika Vue
+Note: Tree Shacking dosn't be supported in this vision witch Vue Cli(Webpack) 
 
-a simple component library system boilerplate for Vue
+## stack
 
-## Startup
+- [x] storybook@^6
+- [x] @vue/composition-api
+- [x] vue@^2
+- [x] postcss@^7
+- [x] tailwindcss@^2
+- [x] TypeScript
+- [x] Jest
+
+## development
 
 ``` bash
-$ yarn add @coloration/sika-vue
+$ npm i
+$ npm run serve
+```
+
+## startup
+
+``` bash
+$ npm <npm-package-name> -S
 ```
 
 ```js
 // main.js
-import '@coloration/sika-vue/dist/sika.css'
+import '<npm-package-name>/dist/sika.css'
 ```
 
 in component 
@@ -28,22 +43,14 @@ in component
 </ThemeProvider>
 </template>
 <script>
-import { ThemeProvider, Box, Bar } from '@coloration/sika-vue'
+import { ThemeProvider, Box, Bar } from '<npm-package-name>'
 export default {
   components: { ThemeProvider, Box, Bar }
 }
 </script>
 ```
 
-
-
-## Dependencies
-
-- [x] Vue@2.x
-- [x] @vue/composition-api
-
-
-## Features
+## features
 
 - System
   - [x] ThemeProvider
@@ -54,3 +61,7 @@ export default {
 
 - Chart
   - [x] Bar: a demo chart
+
+--
+
+check branch `master` from Vue3
