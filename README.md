@@ -18,8 +18,8 @@ $ npm run build
 
 ## 🔍 Checklist
 
-- [] Rename `name` or `vue-component-library-boilerplate` in package.json
-- [] Rename `build.lib.name` in `vite.config.ts` for umd global name
+- [ ] Rename `name` or `vue-component-library-boilerplate` in package.json
+- [ ] Rename `build.lib.name` in `vite.config.ts` for umd global name
 
 
 ## 📄 License
