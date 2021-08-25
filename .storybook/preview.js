@@ -1,16 +1,11 @@
-import { addParameters } from '@storybook/vue3'
+import 'windi.css'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
-}
-
-addParameters({
-  options: {
-    
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
   },
-  backgrounds: {
-    default: 'dark',
-    grid: {
-    }
-  }
-})
+}

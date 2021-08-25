@@ -1,10 +1,17 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import WindiCSS from 'vite-plugin-windicss'
 import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    WindiCSS()
+  ],
+  optimizeDeps: {
+    exclude: ['vue-demi']
+  },
   build: {
     lib: {
       entry: path.resolve(__dirname, 'lib/main.ts'),

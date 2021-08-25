@@ -8,16 +8,7 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
-    "types": ["vite/client"]
+    "lib": ["esnext", "dom"]
   },
-  "include": [
-    "lib/**/*.ts", 
-    "lib/**/*.d.ts", 
-    "lib/**/*.tsx", 
-    "lib/**/*.vue",
-
-    "preview/**/*.ts", 
-    "preview/**/*.vue", 
-  ]
+  "include": ["lib/**/*.ts", "lib/**/*.d.ts", "lib/**/*.tsx", "lib/**/*.vue"]
 }
